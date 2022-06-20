@@ -1,4 +1,4 @@
-# MedBioinfo 2022 Applied Bioinformatics
+# One shared part from MedBioinfo 2022 Applied Bioinformatics
 ## Slurm jobs and Snakemake workflows for virus abundant analysis
 
 ### Data source
