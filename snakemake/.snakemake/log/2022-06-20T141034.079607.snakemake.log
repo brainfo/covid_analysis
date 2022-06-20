@@ -1,0 +1,42 @@
+Building DAG of jobs...
+The code used to generate one or several output files has changed:
+    To inspect which output files have changes, run 'snakemake --list-code-changes'.
+    To trigger a re-run, use 'snakemake -R $(snakemake --list-code-changes)'.
+The input used to generate one or several output files has changed:
+    To inspect which output files have changes, run 'snakemake --list-input-changes'.
+    To trigger a re-run, use 'snakemake -R $(snakemake --list-input-changes)'.
+Using shell: /usr/bin/bash
+Provided cluster nodes: 8
+Job stats:
+job                     count    min threads    max threads
+--------------------  -------  -------------  -------------
+all                         1              1              1
+sample_virus_heatmap        1              1              1
+total                       2              1              1
+
+Select jobs to execute...
+
+[Mon Jun 20 14:10:36 2022]
+rule sample_virus_heatmap:
+    input: /shared/projects/form_2022_19/pascal/central_database/sample_collab.db
+    output: output/heatmap/sample_virus_heatmap.pdf
+    jobid: 17
+    resources: mem_mb=1000, disk_mb=1000, tmpdir=/tmp
+
+Submitted job 17 with external jobid 'Submitted batch job 23384362'.
+[Mon Jun 20 14:12:16 2022]
+Error in rule sample_virus_heatmap:
+    jobid: 17
+    output: output/heatmap/sample_virus_heatmap.pdf
+    cluster_jobid: Submitted batch job 23384362
+
+Error executing rule sample_virus_heatmap on cluster (jobid: 17, external: Submitted batch job 23384362, jobscript: /shared/ifbstor1/projects/form_2022_19/hong/sars2copath/snakemake/.snakemake/tmp.krzjrsyn/snakejob.sample_virus_heatmap.17.sh). For error details see the cluster log and the log files of the involved rule(s).
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+The code used to generate one or several output files has changed:
+    To inspect which output files have changes, run 'snakemake --list-code-changes'.
+    To trigger a re-run, use 'snakemake -R $(snakemake --list-code-changes)'.
+The input used to generate one or several output files has changed:
+    To inspect which output files have changes, run 'snakemake --list-input-changes'.
+    To trigger a re-run, use 'snakemake -R $(snakemake --list-input-changes)'.
+Complete log: .snakemake/log/2022-06-20T141034.079607.snakemake.log

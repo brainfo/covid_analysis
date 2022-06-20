@@ -1,0 +1,186 @@
+Building DAG of jobs...
+The code used to generate one or several output files has changed:
+    To inspect which output files have changes, run 'snakemake --list-code-changes'.
+    To trigger a re-run, use 'snakemake -R $(snakemake --list-code-changes)'.
+The input used to generate one or several output files has changed:
+    To inspect which output files have changes, run 'snakemake --list-input-changes'.
+    To trigger a re-run, use 'snakemake -R $(snakemake --list-input-changes)'.
+Using shell: /usr/bin/bash
+Provided cluster nodes: 8
+Job stats:
+job              count    min threads    max threads
+-------------  -------  -------------  -------------
+all                  1              1              1
+bracken2krona        8              1              1
+total                9              1              1
+
+Select jobs to execute...
+
+[Mon Jun 20 13:24:57 2022]
+rule bracken2krona:
+    input: output/bracken/braken_ERR6913243_reports.tab
+    output: output/krona/ERR6913243_krona.txt, output/krona/ERR6913243
+    jobid: 32
+    wildcards: accnum=ERR6913243
+    resources: mem_mb=1000, disk_mb=1000, tmpdir=/tmp
+
+Submitted job 32 with external jobid 'Submitted batch job 23383814'.
+
+[Mon Jun 20 13:24:57 2022]
+rule bracken2krona:
+    input: output/bracken/braken_ERR6913147_reports.tab
+    output: output/krona/ERR6913147_krona.txt, output/krona/ERR6913147
+    jobid: 17
+    wildcards: accnum=ERR6913147
+    resources: mem_mb=1000, disk_mb=1000, tmpdir=/tmp
+
+Submitted job 17 with external jobid 'Submitted batch job 23383815'.
+
+[Mon Jun 20 13:24:57 2022]
+rule bracken2krona:
+    input: output/bracken/braken_ERR6913257_reports.tab
+    output: output/krona/ERR6913257_krona.txt, output/krona/ERR6913257
+    jobid: 38
+    wildcards: accnum=ERR6913257
+    resources: mem_mb=1000, disk_mb=1000, tmpdir=/tmp
+
+Submitted job 38 with external jobid 'Submitted batch job 23383816'.
+
+[Mon Jun 20 13:24:58 2022]
+rule bracken2krona:
+    input: output/bracken/braken_ERR6913157_reports.tab
+    output: output/krona/ERR6913157_krona.txt, output/krona/ERR6913157
+    jobid: 23
+    wildcards: accnum=ERR6913157
+    resources: mem_mb=1000, disk_mb=1000, tmpdir=/tmp
+
+Submitted job 23 with external jobid 'Submitted batch job 23383817'.
+
+[Mon Jun 20 13:24:58 2022]
+rule bracken2krona:
+    input: output/bracken/braken_ERR6913250_reports.tab
+    output: output/krona/ERR6913250_krona.txt, output/krona/ERR6913250
+    jobid: 29
+    wildcards: accnum=ERR6913250
+    resources: mem_mb=1000, disk_mb=1000, tmpdir=/tmp
+
+Submitted job 29 with external jobid 'Submitted batch job 23383818'.
+
+[Mon Jun 20 13:24:58 2022]
+rule bracken2krona:
+    input: output/bracken/braken_ERR6913253_reports.tab
+    output: output/krona/ERR6913253_krona.txt, output/krona/ERR6913253
+    jobid: 35
+    wildcards: accnum=ERR6913253
+    resources: mem_mb=1000, disk_mb=1000, tmpdir=/tmp
+
+Submitted job 35 with external jobid 'Submitted batch job 23383819'.
+
+[Mon Jun 20 13:24:58 2022]
+rule bracken2krona:
+    input: output/bracken/braken_ERR6913154_reports.tab
+    output: output/krona/ERR6913154_krona.txt, output/krona/ERR6913154
+    jobid: 20
+    wildcards: accnum=ERR6913154
+    resources: mem_mb=1000, disk_mb=1000, tmpdir=/tmp
+
+Submitted job 20 with external jobid 'Submitted batch job 23383820'.
+
+[Mon Jun 20 13:24:58 2022]
+rule bracken2krona:
+    input: output/bracken/braken_ERR6913161_reports.tab
+    output: output/krona/ERR6913161_krona.txt, output/krona/ERR6913161
+    jobid: 26
+    wildcards: accnum=ERR6913161
+    resources: mem_mb=1000, disk_mb=1000, tmpdir=/tmp
+
+Submitted job 26 with external jobid 'Submitted batch job 23383821'.
+[Mon Jun 20 13:25:16 2022]
+Error in rule bracken2krona:
+    jobid: 23
+    output: output/krona/ERR6913157_krona.txt, output/krona/ERR6913157
+    shell:
+        mkdir -p output/krona;python /shared/projects/form_2022_19/kraken2/KrakenTools/kreport2krona.py -r output/bracken/braken_ERR6913157_reports.tab -o output/krona/ERR6913157_krona.txt --no-intermediate-ranks
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 23383817
+
+Error executing rule bracken2krona on cluster (jobid: 23, external: Submitted batch job 23383817, jobscript: /shared/ifbstor1/projects/form_2022_19/hong/sars2copath/snakemake/.snakemake/tmp.yhg5gepz/snakejob.bracken2krona.23.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Mon Jun 20 13:25:16 2022]
+Error in rule bracken2krona:
+    jobid: 29
+    output: output/krona/ERR6913250_krona.txt, output/krona/ERR6913250
+    shell:
+        mkdir -p output/krona;python /shared/projects/form_2022_19/kraken2/KrakenTools/kreport2krona.py -r output/bracken/braken_ERR6913250_reports.tab -o output/krona/ERR6913250_krona.txt --no-intermediate-ranks
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 23383818
+
+Error executing rule bracken2krona on cluster (jobid: 29, external: Submitted batch job 23383818, jobscript: /shared/ifbstor1/projects/form_2022_19/hong/sars2copath/snakemake/.snakemake/tmp.yhg5gepz/snakejob.bracken2krona.29.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Mon Jun 20 13:25:26 2022]
+Error in rule bracken2krona:
+    jobid: 32
+    output: output/krona/ERR6913243_krona.txt, output/krona/ERR6913243
+    shell:
+        mkdir -p output/krona;python /shared/projects/form_2022_19/kraken2/KrakenTools/kreport2krona.py -r output/bracken/braken_ERR6913243_reports.tab -o output/krona/ERR6913243_krona.txt --no-intermediate-ranks
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 23383814
+
+Error executing rule bracken2krona on cluster (jobid: 32, external: Submitted batch job 23383814, jobscript: /shared/ifbstor1/projects/form_2022_19/hong/sars2copath/snakemake/.snakemake/tmp.yhg5gepz/snakejob.bracken2krona.32.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Mon Jun 20 13:25:26 2022]
+Error in rule bracken2krona:
+    jobid: 17
+    output: output/krona/ERR6913147_krona.txt, output/krona/ERR6913147
+    shell:
+        mkdir -p output/krona;python /shared/projects/form_2022_19/kraken2/KrakenTools/kreport2krona.py -r output/bracken/braken_ERR6913147_reports.tab -o output/krona/ERR6913147_krona.txt --no-intermediate-ranks
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 23383815
+
+Error executing rule bracken2krona on cluster (jobid: 17, external: Submitted batch job 23383815, jobscript: /shared/ifbstor1/projects/form_2022_19/hong/sars2copath/snakemake/.snakemake/tmp.yhg5gepz/snakejob.bracken2krona.17.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Mon Jun 20 13:25:26 2022]
+Error in rule bracken2krona:
+    jobid: 38
+    output: output/krona/ERR6913257_krona.txt, output/krona/ERR6913257
+    shell:
+        mkdir -p output/krona;python /shared/projects/form_2022_19/kraken2/KrakenTools/kreport2krona.py -r output/bracken/braken_ERR6913257_reports.tab -o output/krona/ERR6913257_krona.txt --no-intermediate-ranks
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 23383816
+
+Error executing rule bracken2krona on cluster (jobid: 38, external: Submitted batch job 23383816, jobscript: /shared/ifbstor1/projects/form_2022_19/hong/sars2copath/snakemake/.snakemake/tmp.yhg5gepz/snakejob.bracken2krona.38.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Mon Jun 20 13:25:26 2022]
+Error in rule bracken2krona:
+    jobid: 20
+    output: output/krona/ERR6913154_krona.txt, output/krona/ERR6913154
+    shell:
+        mkdir -p output/krona;python /shared/projects/form_2022_19/kraken2/KrakenTools/kreport2krona.py -r output/bracken/braken_ERR6913154_reports.tab -o output/krona/ERR6913154_krona.txt --no-intermediate-ranks
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 23383820
+
+Error executing rule bracken2krona on cluster (jobid: 20, external: Submitted batch job 23383820, jobscript: /shared/ifbstor1/projects/form_2022_19/hong/sars2copath/snakemake/.snakemake/tmp.yhg5gepz/snakejob.bracken2krona.20.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Mon Jun 20 13:25:26 2022]
+Error in rule bracken2krona:
+    jobid: 26
+    output: output/krona/ERR6913161_krona.txt, output/krona/ERR6913161
+    shell:
+        mkdir -p output/krona;python /shared/projects/form_2022_19/kraken2/KrakenTools/kreport2krona.py -r output/bracken/braken_ERR6913161_reports.tab -o output/krona/ERR6913161_krona.txt --no-intermediate-ranks
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 23383821
+
+Error executing rule bracken2krona on cluster (jobid: 26, external: Submitted batch job 23383821, jobscript: /shared/ifbstor1/projects/form_2022_19/hong/sars2copath/snakemake/.snakemake/tmp.yhg5gepz/snakejob.bracken2krona.26.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Mon Jun 20 13:25:46 2022]
+Error in rule bracken2krona:
+    jobid: 35
+    output: output/krona/ERR6913253_krona.txt, output/krona/ERR6913253
+    shell:
+        mkdir -p output/krona;python /shared/projects/form_2022_19/kraken2/KrakenTools/kreport2krona.py -r output/bracken/braken_ERR6913253_reports.tab -o output/krona/ERR6913253_krona.txt --no-intermediate-ranks
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 23383819
+
+Error executing rule bracken2krona on cluster (jobid: 35, external: Submitted batch job 23383819, jobscript: /shared/ifbstor1/projects/form_2022_19/hong/sars2copath/snakemake/.snakemake/tmp.yhg5gepz/snakejob.bracken2krona.35.sh). For error details see the cluster log and the log files of the involved rule(s).
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+The code used to generate one or several output files has changed:
+    To inspect which output files have changes, run 'snakemake --list-code-changes'.
+    To trigger a re-run, use 'snakemake -R $(snakemake --list-code-changes)'.
+The input used to generate one or several output files has changed:
+    To inspect which output files have changes, run 'snakemake --list-input-changes'.
+    To trigger a re-run, use 'snakemake -R $(snakemake --list-input-changes)'.
+Complete log: .snakemake/log/2022-06-20T132455.718117.snakemake.log

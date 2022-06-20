@@ -1,0 +1,36 @@
+__default__:
+  time: "00:10:00"
+  n: 1
+  partition: "fast"
+  mem: 5G
+  cpu: 4
+ 
+fastqc:
+  time: "00:10:00"
+  n: 1
+
+flash2:
+  time: "00:30:00"
+  n: 1
+  cpu: 8
+ 
+kraken:
+  time: "00:30:00"
+  n: 1
+  mem: 80G
+  cpu: 4
+
+bracken:
+  time: "00:30:00"
+  n: 1
+  mem: 80G
+  cpu: 4
+
+bracken2krona:
+  time: "00:30:00"
+  n: 1
+  mem: 5G
+  cpu: 1
+
+sample_virus_heatmap:
+  mem: 10G

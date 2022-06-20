@@ -1,0 +1,33 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 1
+Job stats:
+job       count    min threads    max threads
+------  -------  -------------  -------------
+all           1              1              1
+fastqc        1              1              1
+total         2              1              1
+
+Select jobs to execute...
+
+[Fri Jun 17 12:08:52 2022]
+rule fastqc:
+    input: data/sra_fastq/ERR6913147_1.fastq.gz, data/sra_fastq/ERR6913147_2.fastq.gz, data/sra_fastq/ERR6913154_1.fastq.gz, data/sra_fastq/ERR6913154_2.fastq.gz, data/sra_fastq/ERR6913157_1.fastq.gz, data/sra_fastq/ERR6913157_2.fastq.gz, data/sra_fastq/ERR6913161_1.fastq.gz, data/sra_fastq/ERR6913161_2.fastq.gz, data/sra_fastq/ERR6913250_1.fastq.gz, data/sra_fastq/ERR6913250_2.fastq.gz, data/sra_fastq/ERR6913243_1.fastq.gz, data/sra_fastq/ERR6913243_2.fastq.gz, data/sra_fastq/ERR6913253_1.fastq.gz, data/sra_fastq/ERR6913253_2.fastq.gz, data/sra_fastq/ERR6913257_1.fastq.gz, data/sra_fastq/ERR6913257_2.fastq.gz
+    output: output/fastqc/ERR6913147_1_fastqc.html, output/fastqc/ERR6913147_2_fastqc.html, output/fastqc/ERR6913154_1_fastqc.html, output/fastqc/ERR6913154_2_fastqc.html, output/fastqc/ERR6913157_1_fastqc.html, output/fastqc/ERR6913157_2_fastqc.html, output/fastqc/ERR6913161_1_fastqc.html, output/fastqc/ERR6913161_2_fastqc.html, output/fastqc/ERR6913250_1_fastqc.html, output/fastqc/ERR6913250_2_fastqc.html, output/fastqc/ERR6913243_1_fastqc.html, output/fastqc/ERR6913243_2_fastqc.html, output/fastqc/ERR6913253_1_fastqc.html, output/fastqc/ERR6913253_2_fastqc.html, output/fastqc/ERR6913257_1_fastqc.html, output/fastqc/ERR6913257_2_fastqc.html
+    jobid: 1
+    resources: mem_mb=1000, disk_mb=1000, tmpdir=/tmp
+
+Submitted job 1 with external jobid 'Submitted batch job 23370225'.
+[Fri Jun 17 12:09:02 2022]
+Error in rule fastqc:
+    jobid: 1
+    output: output/fastqc/ERR6913147_1_fastqc.html, output/fastqc/ERR6913147_2_fastqc.html, output/fastqc/ERR6913154_1_fastqc.html, output/fastqc/ERR6913154_2_fastqc.html, output/fastqc/ERR6913157_1_fastqc.html, output/fastqc/ERR6913157_2_fastqc.html, output/fastqc/ERR6913161_1_fastqc.html, output/fastqc/ERR6913161_2_fastqc.html, output/fastqc/ERR6913250_1_fastqc.html, output/fastqc/ERR6913250_2_fastqc.html, output/fastqc/ERR6913243_1_fastqc.html, output/fastqc/ERR6913243_2_fastqc.html, output/fastqc/ERR6913253_1_fastqc.html, output/fastqc/ERR6913253_2_fastqc.html, output/fastqc/ERR6913257_1_fastqc.html, output/fastqc/ERR6913257_2_fastqc.html
+    shell:
+        mkdir -p output/fastqcfastqc --noextract -t 4 data/sra_fastq/ERR6913147_1.fastq.gz data/sra_fastq/ERR6913147_2.fastq.gz data/sra_fastq/ERR6913154_1.fastq.gz data/sra_fastq/ERR6913154_2.fastq.gz data/sra_fastq/ERR6913157_1.fastq.gz data/sra_fastq/ERR6913157_2.fastq.gz data/sra_fastq/ERR6913161_1.fastq.gz data/sra_fastq/ERR6913161_2.fastq.gz data/sra_fastq/ERR6913250_1.fastq.gz data/sra_fastq/ERR6913250_2.fastq.gz data/sra_fastq/ERR6913243_1.fastq.gz data/sra_fastq/ERR6913243_2.fastq.gz data/sra_fastq/ERR6913253_1.fastq.gz data/sra_fastq/ERR6913253_2.fastq.gz data/sra_fastq/ERR6913257_1.fastq.gz data/sra_fastq/ERR6913257_2.fastq.gz -o output/fastqc/ERR6913147_1_fastqc.html output/fastqc/ERR6913147_2_fastqc.html output/fastqc/ERR6913154_1_fastqc.html output/fastqc/ERR6913154_2_fastqc.html output/fastqc/ERR6913157_1_fastqc.html output/fastqc/ERR6913157_2_fastqc.html output/fastqc/ERR6913161_1_fastqc.html output/fastqc/ERR6913161_2_fastqc.html output/fastqc/ERR6913250_1_fastqc.html output/fastqc/ERR6913250_2_fastqc.html output/fastqc/ERR6913243_1_fastqc.html output/fastqc/ERR6913243_2_fastqc.html output/fastqc/ERR6913253_1_fastqc.html output/fastqc/ERR6913253_2_fastqc.html output/fastqc/ERR6913257_1_fastqc.html output/fastqc/ERR6913257_2_fastqc.html 
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 23370225
+
+Error executing rule fastqc on cluster (jobid: 1, external: Submitted batch job 23370225, jobscript: /shared/ifbstor1/projects/form_2022_19/hong/sars2copath/snakemake/.snakemake/tmp.7ozht8yb/snakejob.fastqc.1.sh). For error details see the cluster log and the log files of the involved rule(s).
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2022-06-17T120848.993075.snakemake.log

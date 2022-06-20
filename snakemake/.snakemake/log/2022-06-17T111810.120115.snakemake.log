@@ -1,0 +1,3 @@
+NameError in line 3 of /shared/ifbstor1/projects/form_2022_19/hong/sars2copath/snakemake/Snakefile:
+name 'np' is not defined
+  File "/shared/ifbstor1/projects/form_2022_19/hong/sars2copath/snakemake/Snakefile", line 3, in <module>

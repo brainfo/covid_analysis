@@ -1,0 +1,4 @@
+TypeError in line 3 of /shared/ifbstor1/projects/form_2022_19/hong/sars2copath/snakemake/Snakefile:
+data type 'txt' not understood
+  File "/shared/ifbstor1/projects/form_2022_19/hong/sars2copath/snakemake/Snakefile", line 3, in <module>
+  File "/shared/ifbstor1/software/miniconda/envs/snakemake-7.7.0/lib/python3.10/site-packages/numpy/lib/npyio.py", line 1032, in loadtxt

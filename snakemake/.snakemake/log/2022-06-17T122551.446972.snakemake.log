@@ -1,0 +1,35 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 1
+Job stats:
+job       count    min threads    max threads
+------  -------  -------------  -------------
+all           1              1              1
+fastqc        1              1              1
+total         2              1              1
+
+Select jobs to execute...
+
+[Fri Jun 17 12:25:52 2022]
+rule fastqc:
+    input: data/sra_fastq/ERR6913147_1.fastq.gz, data/sra_fastq/ERR6913147_2.fastq.gz, data/sra_fastq/ERR6913154_1.fastq.gz, data/sra_fastq/ERR6913154_2.fastq.gz, data/sra_fastq/ERR6913157_1.fastq.gz, data/sra_fastq/ERR6913157_2.fastq.gz, data/sra_fastq/ERR6913161_1.fastq.gz, data/sra_fastq/ERR6913161_2.fastq.gz, data/sra_fastq/ERR6913250_1.fastq.gz, data/sra_fastq/ERR6913250_2.fastq.gz, data/sra_fastq/ERR6913243_1.fastq.gz, data/sra_fastq/ERR6913243_2.fastq.gz, data/sra_fastq/ERR6913253_1.fastq.gz, data/sra_fastq/ERR6913253_2.fastq.gz, data/sra_fastq/ERR6913257_1.fastq.gz, data/sra_fastq/ERR6913257_2.fastq.gz
+    output: output/fastqc/ERR6913147_1_fastqc.html, output/fastqc/ERR6913147_2_fastqc.html, output/fastqc/ERR6913154_1_fastqc.html, output/fastqc/ERR6913154_2_fastqc.html, output/fastqc/ERR6913157_1_fastqc.html, output/fastqc/ERR6913157_2_fastqc.html, output/fastqc/ERR6913161_1_fastqc.html, output/fastqc/ERR6913161_2_fastqc.html, output/fastqc/ERR6913250_1_fastqc.html, output/fastqc/ERR6913250_2_fastqc.html, output/fastqc/ERR6913243_1_fastqc.html, output/fastqc/ERR6913243_2_fastqc.html, output/fastqc/ERR6913253_1_fastqc.html, output/fastqc/ERR6913253_2_fastqc.html, output/fastqc/ERR6913257_1_fastqc.html, output/fastqc/ERR6913257_2_fastqc.html
+    jobid: 1
+    resources: mem_mb=1000, disk_mb=1000, tmpdir=/tmp
+
+Submitted job 1 with external jobid 'Submitted batch job 23370494'.
+[Fri Jun 17 12:27:32 2022]
+Finished job 1.
+1 of 2 steps (50%) done
+Select jobs to execute...
+
+[Fri Jun 17 12:27:32 2022]
+localrule all:
+    input: output/fastqc/ERR6913147_1_fastqc.html, output/fastqc/ERR6913147_2_fastqc.html, output/fastqc/ERR6913154_1_fastqc.html, output/fastqc/ERR6913154_2_fastqc.html, output/fastqc/ERR6913157_1_fastqc.html, output/fastqc/ERR6913157_2_fastqc.html, output/fastqc/ERR6913161_1_fastqc.html, output/fastqc/ERR6913161_2_fastqc.html, output/fastqc/ERR6913250_1_fastqc.html, output/fastqc/ERR6913250_2_fastqc.html, output/fastqc/ERR6913243_1_fastqc.html, output/fastqc/ERR6913243_2_fastqc.html, output/fastqc/ERR6913253_1_fastqc.html, output/fastqc/ERR6913253_2_fastqc.html, output/fastqc/ERR6913257_1_fastqc.html, output/fastqc/ERR6913257_2_fastqc.html
+    jobid: 0
+    resources: mem_mb=1000, disk_mb=1000, tmpdir=/tmp
+
+[Fri Jun 17 12:27:32 2022]
+Finished job 0.
+2 of 2 steps (100%) done
+Complete log: .snakemake/log/2022-06-17T122551.446972.snakemake.log

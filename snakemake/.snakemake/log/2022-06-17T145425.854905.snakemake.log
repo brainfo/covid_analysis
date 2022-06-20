@@ -1,0 +1,47 @@
+Building DAG of jobs...
+The code used to generate one or several output files has changed:
+    To inspect which output files have changes, run 'snakemake --list-code-changes'.
+    To trigger a re-run, use 'snakemake -R $(snakemake --list-code-changes)'.
+The input used to generate one or several output files has changed:
+    To inspect which output files have changes, run 'snakemake --list-input-changes'.
+    To trigger a re-run, use 'snakemake -R $(snakemake --list-input-changes)'.
+Using shell: /usr/bin/bash
+Provided cluster nodes: 1
+Job stats:
+job        count    min threads    max threads
+-------  -------  -------------  -------------
+all            1              1              1
+bracken        8              4              4
+total          9              1              4
+
+Select jobs to execute...
+
+[Fri Jun 17 14:54:27 2022]
+rule bracken:
+    input: /shared/projects/form_2022_19/kraken2/arch_bact_vir_hum_protoz_fung, output/kraken/kraken_ERR6913257_reports.tab
+    output: output/bracken/braken_ERR6913257_results.tab, output/bracken/braken_ERR6913257_reports.tab
+    jobid: 31
+    wildcards: accnum=ERR6913257
+    threads: 4
+    resources: mem_mb=1000, disk_mb=1000, tmpdir=/tmp
+
+Submitted job 31 with external jobid 'Submitted batch job 23372974'.
+[Fri Jun 17 14:54:36 2022]
+Error in rule bracken:
+    jobid: 31
+    output: output/bracken/braken_ERR6913257_results.tab, output/bracken/braken_ERR6913257_reports.tab
+    shell:
+        mkdir -p output/bracken;bracken -d /shared/projects/form_2022_19/kraken2/arch_bact_vir_hum_protoz_fung -i output/kraken/kraken_ERR6913257_reports.tab -o output/bracken/braken_ERR6913257_results.tab -w output/bracken/braken_ERR6913257_reports.tab -r 50 -t 5
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 23372974
+
+Error executing rule bracken on cluster (jobid: 31, external: Submitted batch job 23372974, jobscript: /shared/ifbstor1/projects/form_2022_19/hong/sars2copath/snakemake/.snakemake/tmp.0r65q7jt/snakejob.bracken.31.sh). For error details see the cluster log and the log files of the involved rule(s).
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+The code used to generate one or several output files has changed:
+    To inspect which output files have changes, run 'snakemake --list-code-changes'.
+    To trigger a re-run, use 'snakemake -R $(snakemake --list-code-changes)'.
+The input used to generate one or several output files has changed:
+    To inspect which output files have changes, run 'snakemake --list-input-changes'.
+    To trigger a re-run, use 'snakemake -R $(snakemake --list-input-changes)'.
+Complete log: .snakemake/log/2022-06-17T145425.854905.snakemake.log

@@ -1,0 +1,154 @@
+Building DAG of jobs...
+The code used to generate one or several output files has changed:
+    To inspect which output files have changes, run 'snakemake --list-code-changes'.
+    To trigger a re-run, use 'snakemake -R $(snakemake --list-code-changes)'.
+The input used to generate one or several output files has changed:
+    To inspect which output files have changes, run 'snakemake --list-input-changes'.
+    To trigger a re-run, use 'snakemake -R $(snakemake --list-input-changes)'.
+Using shell: /usr/bin/bash
+Provided cluster nodes: 1
+Job stats:
+job       count    min threads    max threads
+------  -------  -------------  -------------
+all           1              1              1
+kraken        8              4              4
+total         9              1              4
+
+Select jobs to execute...
+
+[Fri Jun 17 14:38:24 2022]
+rule kraken:
+    input: /shared/projects/form_2022_19/kraken2/arch_bact_vir_hum_protoz_fung, data/sra_fastq/ERR6913154_1.fastq.gz, data/sra_fastq/ERR6913154_2.fastq.gz
+    output: output/kraken/kraken_ERR6913154_results.tab, output/kraken/kraken_ERR6913154_reports.tab
+    jobid: 26
+    wildcards: accnum=ERR6913154
+    threads: 4
+    resources: mem_mb=1000, disk_mb=1000, tmpdir=/tmp
+
+Submitted job 26 with external jobid 'Submitted batch job 23372713'.
+[Fri Jun 17 14:39:53 2022]
+Finished job 26.
+1 of 9 steps (11%) done
+Select jobs to execute...
+
+[Fri Jun 17 14:39:53 2022]
+rule kraken:
+    input: /shared/projects/form_2022_19/kraken2/arch_bact_vir_hum_protoz_fung, data/sra_fastq/ERR6913253_1.fastq.gz, data/sra_fastq/ERR6913253_2.fastq.gz
+    output: output/kraken/kraken_ERR6913253_results.tab, output/kraken/kraken_ERR6913253_reports.tab
+    jobid: 31
+    wildcards: accnum=ERR6913253
+    threads: 4
+    resources: mem_mb=1000, disk_mb=1000, tmpdir=/tmp
+
+Submitted job 31 with external jobid 'Submitted batch job 23372737'.
+[Fri Jun 17 14:41:03 2022]
+Finished job 31.
+2 of 9 steps (22%) done
+Select jobs to execute...
+
+[Fri Jun 17 14:41:03 2022]
+rule kraken:
+    input: /shared/projects/form_2022_19/kraken2/arch_bact_vir_hum_protoz_fung, data/sra_fastq/ERR6913250_1.fastq.gz, data/sra_fastq/ERR6913250_2.fastq.gz
+    output: output/kraken/kraken_ERR6913250_results.tab, output/kraken/kraken_ERR6913250_reports.tab
+    jobid: 29
+    wildcards: accnum=ERR6913250
+    threads: 4
+    resources: mem_mb=1000, disk_mb=1000, tmpdir=/tmp
+
+Submitted job 29 with external jobid 'Submitted batch job 23372754'.
+[Fri Jun 17 14:42:13 2022]
+Finished job 29.
+3 of 9 steps (33%) done
+Select jobs to execute...
+
+[Fri Jun 17 14:42:14 2022]
+rule kraken:
+    input: /shared/projects/form_2022_19/kraken2/arch_bact_vir_hum_protoz_fung, data/sra_fastq/ERR6913157_1.fastq.gz, data/sra_fastq/ERR6913157_2.fastq.gz
+    output: output/kraken/kraken_ERR6913157_results.tab, output/kraken/kraken_ERR6913157_reports.tab
+    jobid: 27
+    wildcards: accnum=ERR6913157
+    threads: 4
+    resources: mem_mb=1000, disk_mb=1000, tmpdir=/tmp
+
+Submitted job 27 with external jobid 'Submitted batch job 23372772'.
+[Fri Jun 17 14:43:24 2022]
+Finished job 27.
+4 of 9 steps (44%) done
+Select jobs to execute...
+
+[Fri Jun 17 14:43:24 2022]
+rule kraken:
+    input: /shared/projects/form_2022_19/kraken2/arch_bact_vir_hum_protoz_fung, data/sra_fastq/ERR6913147_1.fastq.gz, data/sra_fastq/ERR6913147_2.fastq.gz
+    output: output/kraken/kraken_ERR6913147_results.tab, output/kraken/kraken_ERR6913147_reports.tab
+    jobid: 25
+    wildcards: accnum=ERR6913147
+    threads: 4
+    resources: mem_mb=1000, disk_mb=1000, tmpdir=/tmp
+
+Submitted job 25 with external jobid 'Submitted batch job 23372844'.
+[Fri Jun 17 14:44:44 2022]
+Finished job 25.
+5 of 9 steps (56%) done
+Select jobs to execute...
+
+[Fri Jun 17 14:44:44 2022]
+rule kraken:
+    input: /shared/projects/form_2022_19/kraken2/arch_bact_vir_hum_protoz_fung, data/sra_fastq/ERR6913257_1.fastq.gz, data/sra_fastq/ERR6913257_2.fastq.gz
+    output: output/kraken/kraken_ERR6913257_results.tab, output/kraken/kraken_ERR6913257_reports.tab
+    jobid: 32
+    wildcards: accnum=ERR6913257
+    threads: 4
+    resources: mem_mb=1000, disk_mb=1000, tmpdir=/tmp
+
+Submitted job 32 with external jobid 'Submitted batch job 23372870'.
+[Fri Jun 17 14:46:14 2022]
+Finished job 32.
+6 of 9 steps (67%) done
+Select jobs to execute...
+
+[Fri Jun 17 14:46:14 2022]
+rule kraken:
+    input: /shared/projects/form_2022_19/kraken2/arch_bact_vir_hum_protoz_fung, data/sra_fastq/ERR6913161_1.fastq.gz, data/sra_fastq/ERR6913161_2.fastq.gz
+    output: output/kraken/kraken_ERR6913161_results.tab, output/kraken/kraken_ERR6913161_reports.tab
+    jobid: 28
+    wildcards: accnum=ERR6913161
+    threads: 4
+    resources: mem_mb=1000, disk_mb=1000, tmpdir=/tmp
+
+Submitted job 28 with external jobid 'Submitted batch job 23372896'.
+[Fri Jun 17 14:48:24 2022]
+Finished job 28.
+7 of 9 steps (78%) done
+Select jobs to execute...
+
+[Fri Jun 17 14:48:24 2022]
+rule kraken:
+    input: /shared/projects/form_2022_19/kraken2/arch_bact_vir_hum_protoz_fung, data/sra_fastq/ERR6913243_1.fastq.gz, data/sra_fastq/ERR6913243_2.fastq.gz
+    output: output/kraken/kraken_ERR6913243_results.tab, output/kraken/kraken_ERR6913243_reports.tab
+    jobid: 30
+    wildcards: accnum=ERR6913243
+    threads: 4
+    resources: mem_mb=1000, disk_mb=1000, tmpdir=/tmp
+
+Submitted job 30 with external jobid 'Submitted batch job 23372923'.
+[Fri Jun 17 14:50:44 2022]
+Finished job 30.
+8 of 9 steps (89%) done
+Select jobs to execute...
+
+[Fri Jun 17 14:50:44 2022]
+localrule all:
+    input: output/fastqc/ERR6913147_1_fastqc.html, output/fastqc/ERR6913147_2_fastqc.html, output/fastqc/ERR6913154_1_fastqc.html, output/fastqc/ERR6913154_2_fastqc.html, output/fastqc/ERR6913157_1_fastqc.html, output/fastqc/ERR6913157_2_fastqc.html, output/fastqc/ERR6913161_1_fastqc.html, output/fastqc/ERR6913161_2_fastqc.html, output/fastqc/ERR6913250_1_fastqc.html, output/fastqc/ERR6913250_2_fastqc.html, output/fastqc/ERR6913243_1_fastqc.html, output/fastqc/ERR6913243_2_fastqc.html, output/fastqc/ERR6913253_1_fastqc.html, output/fastqc/ERR6913253_2_fastqc.html, output/fastqc/ERR6913257_1_fastqc.html, output/fastqc/ERR6913257_2_fastqc.html, output/flash2/ERR6913147.flash.extendedFrags.fastq.gz, output/flash2/ERR6913154.flash.extendedFrags.fastq.gz, output/flash2/ERR6913157.flash.extendedFrags.fastq.gz, output/flash2/ERR6913161.flash.extendedFrags.fastq.gz, output/flash2/ERR6913250.flash.extendedFrags.fastq.gz, output/flash2/ERR6913243.flash.extendedFrags.fastq.gz, output/flash2/ERR6913253.flash.extendedFrags.fastq.gz, output/flash2/ERR6913257.flash.extendedFrags.fastq.gz, output/kraken/kraken_ERR6913147_results.tab, output/kraken/kraken_ERR6913154_results.tab, output/kraken/kraken_ERR6913157_results.tab, output/kraken/kraken_ERR6913161_results.tab, output/kraken/kraken_ERR6913250_results.tab, output/kraken/kraken_ERR6913243_results.tab, output/kraken/kraken_ERR6913253_results.tab, output/kraken/kraken_ERR6913257_results.tab, output/kraken/kraken_ERR6913147_reports.tab, output/kraken/kraken_ERR6913154_reports.tab, output/kraken/kraken_ERR6913157_reports.tab, output/kraken/kraken_ERR6913161_reports.tab, output/kraken/kraken_ERR6913250_reports.tab, output/kraken/kraken_ERR6913243_reports.tab, output/kraken/kraken_ERR6913253_reports.tab, output/kraken/kraken_ERR6913257_reports.tab
+    jobid: 0
+    resources: mem_mb=1000, disk_mb=1000, tmpdir=/tmp
+
+[Fri Jun 17 14:50:44 2022]
+Finished job 0.
+9 of 9 steps (100%) done
+The code used to generate one or several output files has changed:
+    To inspect which output files have changes, run 'snakemake --list-code-changes'.
+    To trigger a re-run, use 'snakemake -R $(snakemake --list-code-changes)'.
+The input used to generate one or several output files has changed:
+    To inspect which output files have changes, run 'snakemake --list-input-changes'.
+    To trigger a re-run, use 'snakemake -R $(snakemake --list-input-changes)'.
+Complete log: .snakemake/log/2022-06-17T143822.561350.snakemake.log

@@ -1,0 +1,46 @@
+Building DAG of jobs...
+The code used to generate one or several output files has changed:
+    To inspect which output files have changes, run 'snakemake --list-code-changes'.
+    To trigger a re-run, use 'snakemake -R $(snakemake --list-code-changes)'.
+The input used to generate one or several output files has changed:
+    To inspect which output files have changes, run 'snakemake --list-input-changes'.
+    To trigger a re-run, use 'snakemake -R $(snakemake --list-input-changes)'.
+Using shell: /usr/bin/bash
+Provided cluster nodes: 1
+Job stats:
+job              count    min threads    max threads
+-------------  -------  -------------  -------------
+all                  1              1              1
+bracken2krona        8              1              1
+total                9              1              1
+
+Select jobs to execute...
+
+[Mon Jun 20 13:10:02 2022]
+rule bracken2krona:
+    input: output/bracken/braken_ERR6913157_reports.tab
+    output: output/krona/ERR6913157_krona.txt, output/krona/ERR6913157
+    jobid: 23
+    wildcards: accnum=ERR6913157
+    resources: mem_mb=1000, disk_mb=1000, tmpdir=/tmp
+
+Submitted job 23 with external jobid 'Submitted batch job 23383615'.
+[Mon Jun 20 13:10:41 2022]
+Error in rule bracken2krona:
+    jobid: 23
+    output: output/krona/ERR6913157_krona.txt, output/krona/ERR6913157
+    shell:
+        mkdir -p output/krona;python /shared/projects/form_2022_19/kraken2/KrakenTools/kreport2krona.py -r output/bracken/braken_ERR6913157_reports.tab -o output/krona/ERR6913157_krona.txt --no-intermediate-ranks;sed 's/[a-z]__//g' output/krona/ERR6913157_krona.txt > output/krona/ERR6913157'
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 23383615
+
+Error executing rule bracken2krona on cluster (jobid: 23, external: Submitted batch job 23383615, jobscript: /shared/ifbstor1/projects/form_2022_19/hong/sars2copath/snakemake/.snakemake/tmp.t3x6kqtb/snakejob.bracken2krona.23.sh). For error details see the cluster log and the log files of the involved rule(s).
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+The code used to generate one or several output files has changed:
+    To inspect which output files have changes, run 'snakemake --list-code-changes'.
+    To trigger a re-run, use 'snakemake -R $(snakemake --list-code-changes)'.
+The input used to generate one or several output files has changed:
+    To inspect which output files have changes, run 'snakemake --list-input-changes'.
+    To trigger a re-run, use 'snakemake -R $(snakemake --list-input-changes)'.
+Complete log: .snakemake/log/2022-06-20T130959.435441.snakemake.log

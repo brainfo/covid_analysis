@@ -1,0 +1,154 @@
+Building DAG of jobs...
+The code used to generate one or several output files has changed:
+    To inspect which output files have changes, run 'snakemake --list-code-changes'.
+    To trigger a re-run, use 'snakemake -R $(snakemake --list-code-changes)'.
+The input used to generate one or several output files has changed:
+    To inspect which output files have changes, run 'snakemake --list-input-changes'.
+    To trigger a re-run, use 'snakemake -R $(snakemake --list-input-changes)'.
+Using shell: /usr/bin/bash
+Provided cluster nodes: 1
+Job stats:
+job        count    min threads    max threads
+-------  -------  -------------  -------------
+all            1              1              1
+bracken        8              4              4
+total          9              1              4
+
+Select jobs to execute...
+
+[Fri Jun 17 14:55:11 2022]
+rule bracken:
+    input: /shared/projects/form_2022_19/kraken2/arch_bact_vir_hum_protoz_fung, output/kraken/kraken_ERR6913257_reports.tab
+    output: output/bracken/braken_ERR6913257_results.tab, output/bracken/braken_ERR6913257_reports.tab
+    jobid: 31
+    wildcards: accnum=ERR6913257
+    threads: 4
+    resources: mem_mb=1000, disk_mb=1000, tmpdir=/tmp
+
+Submitted job 31 with external jobid 'Submitted batch job 23372991'.
+[Fri Jun 17 14:55:21 2022]
+Finished job 31.
+1 of 9 steps (11%) done
+Select jobs to execute...
+
+[Fri Jun 17 14:55:21 2022]
+rule bracken:
+    input: /shared/projects/form_2022_19/kraken2/arch_bact_vir_hum_protoz_fung, output/kraken/kraken_ERR6913253_reports.tab
+    output: output/bracken/braken_ERR6913253_results.tab, output/bracken/braken_ERR6913253_reports.tab
+    jobid: 29
+    wildcards: accnum=ERR6913253
+    threads: 4
+    resources: mem_mb=1000, disk_mb=1000, tmpdir=/tmp
+
+Submitted job 29 with external jobid 'Submitted batch job 23373000'.
+[Fri Jun 17 14:55:31 2022]
+Finished job 29.
+2 of 9 steps (22%) done
+Select jobs to execute...
+
+[Fri Jun 17 14:55:31 2022]
+rule bracken:
+    input: /shared/projects/form_2022_19/kraken2/arch_bact_vir_hum_protoz_fung, output/kraken/kraken_ERR6913243_reports.tab
+    output: output/bracken/braken_ERR6913243_results.tab, output/bracken/braken_ERR6913243_reports.tab
+    jobid: 27
+    wildcards: accnum=ERR6913243
+    threads: 4
+    resources: mem_mb=1000, disk_mb=1000, tmpdir=/tmp
+
+Submitted job 27 with external jobid 'Submitted batch job 23373004'.
+[Fri Jun 17 14:55:40 2022]
+Finished job 27.
+3 of 9 steps (33%) done
+Select jobs to execute...
+
+[Fri Jun 17 14:55:40 2022]
+rule bracken:
+    input: /shared/projects/form_2022_19/kraken2/arch_bact_vir_hum_protoz_fung, output/kraken/kraken_ERR6913250_reports.tab
+    output: output/bracken/braken_ERR6913250_results.tab, output/bracken/braken_ERR6913250_reports.tab
+    jobid: 25
+    wildcards: accnum=ERR6913250
+    threads: 4
+    resources: mem_mb=1000, disk_mb=1000, tmpdir=/tmp
+
+Submitted job 25 with external jobid 'Submitted batch job 23373105'.
+[Fri Jun 17 14:55:50 2022]
+Finished job 25.
+4 of 9 steps (44%) done
+Select jobs to execute...
+
+[Fri Jun 17 14:55:50 2022]
+rule bracken:
+    input: /shared/projects/form_2022_19/kraken2/arch_bact_vir_hum_protoz_fung, output/kraken/kraken_ERR6913147_reports.tab
+    output: output/bracken/braken_ERR6913147_results.tab, output/bracken/braken_ERR6913147_reports.tab
+    jobid: 17
+    wildcards: accnum=ERR6913147
+    threads: 4
+    resources: mem_mb=1000, disk_mb=1000, tmpdir=/tmp
+
+Submitted job 17 with external jobid 'Submitted batch job 23373107'.
+[Fri Jun 17 14:56:00 2022]
+Finished job 17.
+5 of 9 steps (56%) done
+Select jobs to execute...
+
+[Fri Jun 17 14:56:00 2022]
+rule bracken:
+    input: /shared/projects/form_2022_19/kraken2/arch_bact_vir_hum_protoz_fung, output/kraken/kraken_ERR6913161_reports.tab
+    output: output/bracken/braken_ERR6913161_results.tab, output/bracken/braken_ERR6913161_reports.tab
+    jobid: 23
+    wildcards: accnum=ERR6913161
+    threads: 4
+    resources: mem_mb=1000, disk_mb=1000, tmpdir=/tmp
+
+Submitted job 23 with external jobid 'Submitted batch job 23373110'.
+[Fri Jun 17 14:56:10 2022]
+Finished job 23.
+6 of 9 steps (67%) done
+Select jobs to execute...
+
+[Fri Jun 17 14:56:10 2022]
+rule bracken:
+    input: /shared/projects/form_2022_19/kraken2/arch_bact_vir_hum_protoz_fung, output/kraken/kraken_ERR6913154_reports.tab
+    output: output/bracken/braken_ERR6913154_results.tab, output/bracken/braken_ERR6913154_reports.tab
+    jobid: 19
+    wildcards: accnum=ERR6913154
+    threads: 4
+    resources: mem_mb=1000, disk_mb=1000, tmpdir=/tmp
+
+Submitted job 19 with external jobid 'Submitted batch job 23373111'.
+[Fri Jun 17 14:56:20 2022]
+Finished job 19.
+7 of 9 steps (78%) done
+Select jobs to execute...
+
+[Fri Jun 17 14:56:20 2022]
+rule bracken:
+    input: /shared/projects/form_2022_19/kraken2/arch_bact_vir_hum_protoz_fung, output/kraken/kraken_ERR6913157_reports.tab
+    output: output/bracken/braken_ERR6913157_results.tab, output/bracken/braken_ERR6913157_reports.tab
+    jobid: 21
+    wildcards: accnum=ERR6913157
+    threads: 4
+    resources: mem_mb=1000, disk_mb=1000, tmpdir=/tmp
+
+Submitted job 21 with external jobid 'Submitted batch job 23373122'.
+[Fri Jun 17 14:56:30 2022]
+Finished job 21.
+8 of 9 steps (89%) done
+Select jobs to execute...
+
+[Fri Jun 17 14:56:30 2022]
+localrule all:
+    input: output/fastqc/ERR6913147_1_fastqc.html, output/fastqc/ERR6913147_2_fastqc.html, output/fastqc/ERR6913154_1_fastqc.html, output/fastqc/ERR6913154_2_fastqc.html, output/fastqc/ERR6913157_1_fastqc.html, output/fastqc/ERR6913157_2_fastqc.html, output/fastqc/ERR6913161_1_fastqc.html, output/fastqc/ERR6913161_2_fastqc.html, output/fastqc/ERR6913250_1_fastqc.html, output/fastqc/ERR6913250_2_fastqc.html, output/fastqc/ERR6913243_1_fastqc.html, output/fastqc/ERR6913243_2_fastqc.html, output/fastqc/ERR6913253_1_fastqc.html, output/fastqc/ERR6913253_2_fastqc.html, output/fastqc/ERR6913257_1_fastqc.html, output/fastqc/ERR6913257_2_fastqc.html, output/bracken/braken_ERR6913147_results.tab, output/bracken/braken_ERR6913154_results.tab, output/bracken/braken_ERR6913157_results.tab, output/bracken/braken_ERR6913161_results.tab, output/bracken/braken_ERR6913250_results.tab, output/bracken/braken_ERR6913243_results.tab, output/bracken/braken_ERR6913253_results.tab, output/bracken/braken_ERR6913257_results.tab, output/bracken/braken_ERR6913147_reports.tab, output/bracken/braken_ERR6913154_reports.tab, output/bracken/braken_ERR6913157_reports.tab, output/bracken/braken_ERR6913161_reports.tab, output/bracken/braken_ERR6913250_reports.tab, output/bracken/braken_ERR6913243_reports.tab, output/bracken/braken_ERR6913253_reports.tab, output/bracken/braken_ERR6913257_reports.tab
+    jobid: 0
+    resources: mem_mb=1000, disk_mb=1000, tmpdir=/tmp
+
+[Fri Jun 17 14:56:30 2022]
+Finished job 0.
+9 of 9 steps (100%) done
+The code used to generate one or several output files has changed:
+    To inspect which output files have changes, run 'snakemake --list-code-changes'.
+    To trigger a re-run, use 'snakemake -R $(snakemake --list-code-changes)'.
+The input used to generate one or several output files has changed:
+    To inspect which output files have changes, run 'snakemake --list-input-changes'.
+    To trigger a re-run, use 'snakemake -R $(snakemake --list-input-changes)'.
+Complete log: .snakemake/log/2022-06-17T145509.948645.snakemake.log

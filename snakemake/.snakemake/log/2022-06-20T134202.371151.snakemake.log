@@ -1,0 +1,47 @@
+Building DAG of jobs...
+The code used to generate one or several output files has changed:
+    To inspect which output files have changes, run 'snakemake --list-code-changes'.
+    To trigger a re-run, use 'snakemake -R $(snakemake --list-code-changes)'.
+The input used to generate one or several output files has changed:
+    To inspect which output files have changes, run 'snakemake --list-input-changes'.
+    To trigger a re-run, use 'snakemake -R $(snakemake --list-input-changes)'.
+Using shell: /usr/bin/bash
+Provided cluster nodes: 8
+Job stats:
+job           count    min threads    max threads
+----------  -------  -------------  -------------
+all               1              1              1
+krona_plot        1              1              1
+total             2              1              1
+
+Select jobs to execute...
+
+[Mon Jun 20 13:42:04 2022]
+rule krona_plot:
+    input: output/krona/ERR6913147, output/krona/ERR6913154, output/krona/ERR6913157, output/krona/ERR6913161, output/krona/ERR6913250, output/krona/ERR6913243, output/krona/ERR6913253, output/krona/ERR6913257
+    output: output/krona/krona.html
+    jobid: 17
+    resources: mem_mb=1000, disk_mb=1000, tmpdir=/tmp
+
+Submitted job 17 with external jobid 'Submitted batch job 23384118'.
+[Mon Jun 20 13:42:33 2022]
+Finished job 17.
+1 of 2 steps (50%) done
+Select jobs to execute...
+
+[Mon Jun 20 13:42:33 2022]
+localrule all:
+    input: output/fastqc/ERR6913147_1_fastqc.html, output/fastqc/ERR6913147_2_fastqc.html, output/fastqc/ERR6913154_1_fastqc.html, output/fastqc/ERR6913154_2_fastqc.html, output/fastqc/ERR6913157_1_fastqc.html, output/fastqc/ERR6913157_2_fastqc.html, output/fastqc/ERR6913161_1_fastqc.html, output/fastqc/ERR6913161_2_fastqc.html, output/fastqc/ERR6913250_1_fastqc.html, output/fastqc/ERR6913250_2_fastqc.html, output/fastqc/ERR6913243_1_fastqc.html, output/fastqc/ERR6913243_2_fastqc.html, output/fastqc/ERR6913253_1_fastqc.html, output/fastqc/ERR6913253_2_fastqc.html, output/fastqc/ERR6913257_1_fastqc.html, output/fastqc/ERR6913257_2_fastqc.html, output/krona/krona.html
+    jobid: 0
+    resources: mem_mb=1000, disk_mb=1000, tmpdir=/tmp
+
+[Mon Jun 20 13:42:33 2022]
+Finished job 0.
+2 of 2 steps (100%) done
+The code used to generate one or several output files has changed:
+    To inspect which output files have changes, run 'snakemake --list-code-changes'.
+    To trigger a re-run, use 'snakemake -R $(snakemake --list-code-changes)'.
+The input used to generate one or several output files has changed:
+    To inspect which output files have changes, run 'snakemake --list-input-changes'.
+    To trigger a re-run, use 'snakemake -R $(snakemake --list-input-changes)'.
+Complete log: .snakemake/log/2022-06-20T134202.371151.snakemake.log

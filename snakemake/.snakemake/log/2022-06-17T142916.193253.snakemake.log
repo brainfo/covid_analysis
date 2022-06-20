@@ -1,0 +1,20 @@
+Building DAG of jobs...
+MissingInputException in line 5 of /shared/ifbstor1/projects/form_2022_19/hong/sars2copath/snakemake/Snakefile:
+Missing input files for rule all:
+    affected files:
+        output/kraken/kraken_ERR6913154_results.tab
+        output/kraken/kraken_ERR6913147_results.tab
+        output/kraken/kraken_ERR6913161_reports.tab
+        output/kraken/kraken_ERR6913154_reports.tab
+        output/kraken/kraken_ERR6913253_reports.tab
+        output/kraken/kraken_ERR6913157_reports.tab
+        output/kraken/kraken_ERR6913250_results.tab
+        output/kraken/kraken_ERR6913257_reports.tab
+        output/kraken/kraken_ERR6913243_results.tab
+        output/kraken/kraken_ERR6913243_reports.tab
+        output/kraken/kraken_ERR6913250_reports.tab
+        output/kraken/kraken_ERR6913161_results.tab
+        output/kraken/kraken_ERR6913157_results.tab
+        output/kraken/kraken_ERR6913257_results.tab
+        output/kraken/kraken_ERR6913253_results.tab
+        output/kraken/kraken_ERR6913147_reports.tab

@@ -1,0 +1,20 @@
+Building DAG of jobs...
+MissingInputException in line 5 of /shared/ifbstor1/projects/form_2022_19/hong/sars2copath/snakemake/Snakefile:
+Missing input files for rule all:
+    affected files:
+        output/fastqc/ERR6913243_2_fastqc.html
+        output/fastqc/ERR6913250_2_fastqc.html
+        output/fastqc/ERR6913154_1_fastqc.html
+        output/fastqc/ERR6913147_1_fastqc.html
+        output/fastqc/ERR6913157_2_fastqc.html
+        output/fastqc/ERR6913161_2_fastqc.html
+        output/fastqc/ERR6913253_2_fastqc.html
+        output/fastqc/ERR6913147_2_fastqc.html
+        output/fastqc/ERR6913243_1_fastqc.html
+        output/fastqc/ERR6913250_1_fastqc.html
+        output/fastqc/ERR6913157_1_fastqc.html
+        output/fastqc/ERR6913154_2_fastqc.html
+        output/fastqc/ERR6913161_1_fastqc.html
+        output/fastqc/ERR6913253_1_fastqc.html
+        output/fastqc/ERR6913257_2_fastqc.html
+        output/fastqc/ERR6913257_1_fastqc.html

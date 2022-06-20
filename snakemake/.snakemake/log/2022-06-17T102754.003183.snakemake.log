@@ -1,0 +1,5 @@
+Wildcard constraints in inputs are ignored. (rule: fastqc)
+Building DAG of jobs...
+WildcardError in line 1 of /shared/ifbstor1/projects/form_2022_19/hong/sars2copath/snakemake/Snakefile:
+Wildcards in input files cannot be determined from output files:
+'sample'

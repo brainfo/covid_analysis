@@ -1,0 +1,29 @@
+Building DAG of jobs...
+The code used to generate one or several output files has changed:
+    To inspect which output files have changes, run 'snakemake --list-code-changes'.
+    To trigger a re-run, use 'snakemake -R $(snakemake --list-code-changes)'.
+The input used to generate one or several output files has changed:
+    To inspect which output files have changes, run 'snakemake --list-input-changes'.
+    To trigger a re-run, use 'snakemake -R $(snakemake --list-input-changes)'.
+Using shell: /usr/bin/bash
+Provided cluster nodes: 1
+Job stats:
+job        count    min threads    max threads
+-------  -------  -------------  -------------
+all            1              1              1
+bracken        8              4              4
+total          9              1              4
+
+Select jobs to execute...
+
+[Fri Jun 17 14:53:33 2022]
+rule bracken:
+    input: /shared/projects/form_2022_19/kraken2/arch_bact_vir_hum_protoz_fung, output/kraken/kraken_ERR6913257_reports.tab
+    output: output/bracken/braken_ERR6913257_results.tab, output/bracken/braken_ERR6913257_reports.tab
+    jobid: 31
+    wildcards: accnum=ERR6913257
+    threads: 4
+    resources: mem_mb=1000, disk_mb=1000, tmpdir=/tmp
+
+RuleException in line 54 of /shared/ifbstor1/projects/form_2022_19/hong/sars2copath/snakemake/Snakefile:
+NameError: The name 'db' is unknown in this context. Please make sure that you defined that variable. Also note that braces not used for variable access have to be escaped by repeating them, i.e. {{print $1}}
