@@ -10,7 +10,6 @@ Samples (either Nasopharyngeal or Throat swabs) from 125 patients, either COVID+
 
 ### Structure of the repository
 
- - ```docs``` contains documentation (eg papers, manuals etc.)
  - ```slurm_jobs``` contain SLURM bash scripts used in the analysis
  - ```snakemake``` contain snakemake workflow of slurm jobs
  - ```standalone_scripts``` contain test scripts before creating ```slurm_jobs``` and ```snakemake```. It's of no practical use.
